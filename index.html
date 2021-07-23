@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/fp.css">
+    <meta name="author" content="Sachiyo Harada" />
+    <meta name="keywords" content="dog, doglovers" />
+    <link rel="icon" type="image/jpg" href="../final-project/img/tiwawa.jpg">
+    <title>ハルのファンクラブページ</title>
+</head>
+
+
+<body>
+
+    <header>
+
+        <h2>ハル オフィシャルファンクラブ</h2>
+        <h3>このサイトは架空です。</h3>
+        <h1 class="up">HaruLovers</h1>
+
+        <nav id="navi">
+            <ul>
+                <li class="container"><a href="#one"> 会員登録 </a> </li>
+                <li class="container"><a href="#two"> イベント </a> </li>
+                <li class="container"><a href="#three"> 会員規約 </a> </li>
+                <li class="container"> <a href="#login"> ログイン </a> </li>
+
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <div class="contents">
+        <aside>
+            <form method="POST" action="mailto:sachi441m@outlook.jp" name="one" id="one">
+                <h2>新規会員の方</h2>
+                <h3>会員登録</h3>
+
+                <div class="information">
+                    <p>
+                            名前：<input type="text" value="姓名">
+                    </p>
+                    <p>
+                            性別：
+                            <input type="radio" name="gender" value="女">女
+                            <input type="radio" name="gender" value="男">男
+                            <input type="radio" checked name="gender" value="その他">その他
+                    </p>
+                    <p>
+                            メールアドレス：<input type="email" value="アドレス" >
+                    <p>
+                    
+                            パスワード：
+                            <input type="password" value="password" name="password">
+                    
+                    </p>
+                    <input type="checkbox" value="agreement" name="agreement" id="agreement" checked>
+                    <label for="agreement">プライバシーポリシーに同意する</label>
+
+                    <input type="submit" id="submit" value="送信する">
+                    <input type="reset" value="リセット">
+
+
+                    <p>*年会費：ささみ</p>
+                    <p>*送信後1－2週間後に会員IDを送ります。</p>
+
+                </div>
+            </form>
+
+
+
+            <table class="pic1">
+                <tr>
+                    <td colspan="4"><IMG src="../final-project/img/a.jpeg" width="550" height="400" alt="犬" id="myBigImage">
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:void(0)" onmouseover="myChgPic( '../final-project/img/m.jpeg')"><IMG
+                                src="../final-project/img/m.jpeg" width="100" height="75" alt="犬"></a></td>
+                    <td><a href="javascript:void(0)" onmouseover="myChgPic( '../final-project/img/a.jpeg' )"><IMG
+                                src="../final-project/img/a.jpeg" width="100" height="75" alt="犬"></a></td>
+                    <td><a href="javascript:void(0)" onmouseover="myChgPic( '../final-project/img/k.jpeg' )"><IMG
+                                src="../final-project/img/k.jpeg" width="100" height="75" alt="犬"></a></td>
+                    <td><a href="javascript:void(0)" onmouseover="myChgPic( '../final-project/img/d.jpeg' )"><IMG
+                                src="../final-project/img/d.jpeg" width="100" height="75" alt="犬"></a></td>
+
+                </tr>
+            </table>
+
+
+            <div id="three">
+                <h2>会員規約</h2>
+                <h3>第一条（定義）</h3>
+                <h4>「Haru公式ファンクラブ」とは、株式会社HARU（以下「当社」といいます）が運営・管理する「Haru lovers」において、当社が提供する会員向けの各種サービスをいいます。</h4>
+                <h3>第２条（会員の地位）</h3>
+                <h4>本会員は、当社が入会を承認した方に限り、Haru公式ファンクラブのサービスを利用することができます。</h4>
+                <h3>第３条（会員登録手続）</h3>
+                <h4> 犬嫌いの方は、入会にあたり当社社内審査が必要となります。</h4>
+                <h3>第４条（会員特典）</h3>
+                <h4> 本ファンクラブの会員様には、以下の特典が無料でご案内可能です。</h4>
+                <ul>定期イベントへのご招待</ul>
+                <ul>はる日記の閲覧権限の付与</ul>
+                <ul>スペシャルグッズの送付（年1回）</ul>
+            </div>
+
+        </aside>
+
+
+        <aside>
+            <!--フォーム-->
+            <form name="login_form" action="../final-project/login.html" class="login_form" id="login_form">
+
+                <h2>会員の方</h2>
+                <h3 class="contact-title" id="four">ログイン</h3>
+                <p>ID、Passwordをご入力の上、「認証」ボタンをクリックしてください。</p>
+
+                <div>
+
+
+                    <div>
+                        <input type="text" value="id" placeholder="ID">
+                    </div>
+
+                    <div>
+                        <input type="password" name="pass" placeholder="Password" onchange="nextPage()">
+
+
+                    </div>
+                    <button type="button" onClick="nextPage();">認証</button>
+                </div>
+
+            </form>
+
+            <div id="two">
+
+                <h2 class="ivent">2021年開催のイベント一覧</h2>
+                <p>2021年9月15日：はるとの散歩会</p>
+                <p>2021年10月13日：はるとの触れ合い会</p>
+                <p>2021年11月23日：はる誕生祭</p>
+                <p>2021年12月11日：はるの芸お披露目会</p>
+                <p>2021年1月15日：はるのクッキング会</p>
+
+            </div>
+
+            <div id="leftPhoto">
+
+                <table>
+                    <tr>
+                        <td colspan="4"><IMG src="../final-project/img/i.jpg" width="450" height="600" id="myImage" alt="犬">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="javascript:void(0)" onmouseover="myPic( '../final-project/img/h.jpeg' )"><IMG
+                                    src="../final-project/img/h.jpeg" width="75" height="100" alt="犬"></a></td>
+                        <td><a href="javascript:void(0)" onmouseover="myPic( '../final-project/img/i.jpg' )"><IMG
+                                    src="../final-project/img/i.jpg" width="75" height="100" alt="犬"></a></td>
+                        <td><a href="javascript:void(0)" onmouseover="myPic( '../final-project/img/l.jpeg' )"><IMG
+                                    src="../final-project/img/l.jpeg" width="75" height="100" alt="犬"></a></td>
+                        <td><a href="javascript:void(0)" onmouseover="myPic( '../final-project/img/f.jpeg' )"><IMG
+                                    src="../final-project/img/f.jpeg" width="75" height="100" alt="犬"></a></td>
+
+                    </tr>
+                </table>
+            </div>
+
+
+        </aside>
+
+    </div>
+
+
+    <footer>
+        Copyright &copy; Sachiyo Harada, All Rights Reserved.
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/fp.js"></script>
+</body>
+
+</html>
